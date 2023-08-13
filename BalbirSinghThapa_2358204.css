@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tektur', cursive;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url("https://www.survivingwithandroid.com/wp-content/uploads/2014/11/android_weather_app.jpg   ");
+    align-items: center;
+    background-size: cover;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.watch {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+}
+
+#search-bar{
+    font-size: 34px; 
+}
+h1{
+    border-radius: 20px;
+    padding: 18px;
+    background-color: black;
+    font-family: Montserrat;
+    font-size: 43px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+
+}
+
+.box{
+    width: 570px;
+    height: 780px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    display: flex;
+    margin-bottom: 5px;
+}
+#time-bar:hover{
+    cursor: pointer;
+    color: darkgray;
+    font-size: 30px;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+} 
+.btn {
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+.weather-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+  
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 18px;
+    font-size: 40px;
+}
+  
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+  
+.weather-info {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+  
+.city-name {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#city {
+        font-size: 22px;
+        padding-left: 1rem;
+        background:none;
+        border: none;
+        border: 1px solid #555;
+        height: 40px;
+        width: 300px;    
+    }
+
+.temp {
+    font-size: 30px;
+    font-weight: bold;
+}
+.weather-info1 {
+    padding: 12px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 10px;
+    color: black;
+    margin-top: 35px;
+    left: 20px;
+    font-weight: 700;
+}
+  
+.humidity, .wind, .pressure {
+    font-size: 19px;
+}
+.past-data {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+}
