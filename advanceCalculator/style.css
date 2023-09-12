@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: aquamarine;
+    height: 50vh;
+    width: 50vw;
+    margin-left: 32rem;
+    margin-top: 10rem;
+    border-radius: 20px;
+    box-shadow: 20px;
+}
+h1{
+    padding-left: 23rem;
+}
+input{
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+#show{
+    margin-left: 30rem;
+    font-size: 20px;
+}
+#input1{
+    margin-left: 22rem;
+}
+#input2{
+    margin-left: 22rem;
+}
+
+button{
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    font-size:30px;
+    padding-bottom: 5px;
+    margin: 2px;
+}
+#plus{
+    margin-left: 23.5rem;
+}
+#btnReset{
+    margin-left: 26rem;
+    margin-top: 5rem;
+    width: 8rem;
+    height: 2rem;
+    padding-bottom: 15px;
+}
+#total{
+    font-family: cursive;
+}
+.result{
+    margin-left: 29rem;  
+    font-size: 25px; 
+    font-weight: bold  
+}
