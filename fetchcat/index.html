@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Cat</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     .main{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center ;
+            background-color: lavender;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            border: 1px solid white;
+            
+        }
+        button{
+            background-color: coral;
+            border-radius: 10px;
+            height: 60px;
+            width: 100px;
+            border: none;
+            margin-top: 1rem;
+        }
+        button:hover{
+            background-color: green;
+            border: 2px sold black;
+        }
+</style>
+<body>
+    <div class="main">
+        <h1>Images</h1>
+        <div id="img"></div>
+
+        <button id="btnR">right</button>
+        <button id="btnL">left</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
