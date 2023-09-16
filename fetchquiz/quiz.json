@@ -1,0 +1,104 @@
+ {
+    "quiz_questions": [
+      {
+        "question": "What is the capital of France?",
+        "options": ["London", "Berlin", "Paris", "Madrid"],
+        "answer": "Paris"
+      },
+      {
+        "question": "Which planet is known as the 'Red Planet'?",
+        "options": ["Mars", "Venus", "Jupiter", "Earth"],
+        "answer": "Mars"
+      },
+      {
+        "question": "What is the largest mammal in the world?",
+        "options": ["Elephant", "Giraffe", "Blue Whale", "Lion"],
+        "answer": "Blue Whale"
+      },
+      {
+        "question": "Which gas do plants absorb from the atmosphere?",
+        "options": ["Oxygen", "Carbon Dioxide", "Hydrogen", "Nitrogen"],
+        "answer": "Carbon Dioxide"
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "options": ["Ag", "Fe", "Au", "Hg"],
+        "answer": "Au"
+      },
+      {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "George Orwell"],
+        "answer": "William Shakespeare"
+      },
+      {
+        "question": "Which gas makes up the majority of the Earth's atmosphere?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "answer": "Nitrogen"
+      },
+      {
+        "question": "What is the largest planet in our solar system?",
+        "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+        "answer": "Jupiter"
+      },
+      {
+        "question": "What is the chemical symbol for water?",
+        "options": ["H2O", "CO2", "N2", "O2"],
+        "answer": "H2O"
+      },
+      {
+        "question": "In which year did Christopher Columbus discover America?",
+        "options": ["1492", "1776", "1620", "1519"],
+        "answer": "1492"
+      },
+      {
+        "question": "Which gas do humans breathe out?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+        "answer": "Carbon Dioxide"
+      },
+      {
+        "question": "What is the largest organ in the human body?",
+        "options": ["Heart", "Brain", "Skin", "Liver"],
+        "answer": "Skin"
+      },
+      {
+        "question": "Which planet is known as the 'Morning Star'?",
+        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+        "answer": "Venus"
+      },
+      {
+        "question": "What is the tallest mountain on Earth?",
+        "options": ["Mount Kilimanjaro", "Mount Everest", "Mount McKinley", "Mount Fuji"],
+        "answer": "Mount Everest"
+      },
+      {
+        "question": "What is the largest ocean on Earth?",
+        "options": ["Atlantic Ocean", "Arctic Ocean", "Indian Ocean", "Pacific Ocean"],
+        "answer": "Pacific Ocean"
+      },
+      {
+        "question": "Which country is known as the 'Land of the Rising Sun'?",
+        "options": ["China", "Japan", "South Korea", "Thailand"],
+        "answer": "Japan"
+      },
+      {
+        "question": "What is the chemical symbol for oxygen?",
+        "options": ["O", "H", "N", "C"],
+        "answer": "O"
+      },
+      {
+        "question": "Who painted the Mona Lisa?",
+        "options": ["Pablo Picasso", "Leonardo da Vinci", "Vincent van Gogh", "Claude Monet"],
+        "answer": "Leonardo da Vinci"
+      },
+      {
+        "question": "What is the largest continent on Earth?",
+        "options": ["Africa", "Europe", "North America", "Asia"],
+        "answer": "Asia"
+      },
+      {
+        "question": "Which gas is responsible for the Earth's greenhouse effect?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Methane"],
+        "answer": "Carbon Dioxide"
+      }
+    ]
+  }
