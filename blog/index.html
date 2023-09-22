@@ -8,18 +8,26 @@
 </head>
 <body>
     <div class="main">
-        <h1>Blog Writing...</h1><br>
-        <h2>Enter the number of days of your blog:</h2><br>
-        <input type="number" id="blogNumber"><br><br>
-        <h2>Write your blog:</h2><br>
-        <textarea id="content" cols="30" rows="10"></textarea><br><br>
-        <button id="save">Save</button><br>
-        <div class="savePara"></div><br>
-        <input type="text" id="blogDel"><br><br>
-        <button id="delete">Delete</button>
-        <div class="delPara"></div><br>
+        <button id="writeDown">Click here to write..!</button>
         <button id="show">Show all blog</button><br>
-        <div id="showPara"></div>
+        <div class="saveSec">
+            <h1>Blog Writing...</h1><br>
+            <h2>Enter the title of your blog:</h2><br>
+            <input type="text" id="blogNumber"><br><br>
+            <h2>Write your blog:</h2><br>
+            <textarea id="content" cols="30" rows="10"></textarea><br><br>
+            <button id="save">Save</button><br>
+            <div class="savePara"></div><br>
+            <button id="return">Return Home</button>
+        </div>
+        <div id="History">
+            <input type="text" id="blogDel"><br><br>
+            <button id="delete">Delete</button>
+            <div class="delPara"></div><br>
+            <div id="showPara"></div><br>
+            <div class="history-datas"></div>
+            <button id="returnHis">Return Home</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
