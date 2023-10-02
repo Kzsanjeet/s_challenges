@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+*{
+    font-family: 'Tektur', cursive;
+    padding: 0;
+    margin: 0;
+}
+.nav-logo i{
+    font-size: 40px;
+}
+.nav-logo{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+hearder,nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-data{
+    display: flex;
+}
+.nav-extra{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-extra i{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+button img{
+    height: 30px;
+    width: 30px;
+}
+.search-box button{
+    border-radius: 10px;
+    margin-top:5px;
+    height: 35px;
+}
+.nav-option a{
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.nav-option a:hover{
+    font-size: 40px;
+}
+.search-box input{
+    border-radius: 10px;
+    height: 10px;
+    padding-top: 20px;
+    width: 10rem;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.new-option a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 40px;
+}
+/* .checking{
+    position: relative;
+    height: 200vh;
+    background-color: red;
+    color: black;
+    padding-top: 30px;
+} */
+@media (max-width:1147px) {
+    .nav-option a{
+        font-size: 25px;
+    }
+    .nav-option a:hover{
+        font-size:30px;    }
+}
+@media (max-width:1162px) {
+    .nav-logo{
+        font-size: 25px;
+    }   
+}
+
+@media (max-width:1019px) {
+    .nav-option a{
+        margin: 0;
+        margin-right: 5px;
+    }
+}
+@media (max-width:944px) {
+    .nav-extra i{
+        margin: 0;
+    }
+}
+@media (max-width:939px) {
+    .nav-option a{
+        margin: 0;
+    }
+}
+@media (max-width:914px) {
+    .nav-logo{
+        margin: 0;
+    }
+    .nav-option a{
+       display: flex;
+       margin-top: 10px;
+       margin-right: 5px;
+       margin-left: 5px;
+    }
+    .search-box button{
+        margin-right: 7rem;
+        margin-top: 5rem;
+    }
+    .search-box input{
+        width: 20vw;
+    }
+    .nav-extra i{
+        margin-top: 5rem;
+        margin-left: 5px;
+    }
+}
+@media (max-width:701px) {
+    .search-box input{
+        margin: 0;
+    }
+    .nav-option a{
+        font-size: 20px;
+    }
+    .nav-option a:hover{
+        font-size: 22px;
+    }
+}
