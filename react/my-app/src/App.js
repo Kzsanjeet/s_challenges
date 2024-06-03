@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
 
+let name = "Sanjeet"
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div className="container">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {/* Content goes here */}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div>
+      <div className="blank">
+        <h1>Hello my name is {name}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Integer ultricies nisi sit amet vehicula varius. Phasellus venenatis, velit in vulputate fermentum, justo arcu aliquam urna, nec rhoncus quam libero nec metus. In dictum metus sed nisl scelerisque, in posuere neque consectetur. Sed in sagittis purus, nec fringilla justo.</p>
+      </div>
+    </>
   );
 }
 

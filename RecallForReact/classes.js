@@ -70,5 +70,5 @@ function outerFunction(outerVariable) {
 const newFunction = outerFunction('outside');
 newFunction('inside');
 
-SELECT * FROM emoloyees
-ORDER BY salary DESC
+// SELECT * FROM emoloyees
+// ORDER BY salary DESC
