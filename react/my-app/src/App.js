@@ -1,27 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-
-let name = "Sanjeet"
 
 function App() {
   return (
     <>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/">TextUtils</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/features">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/pricing">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <div className="container">
-        <p>
-          {/* Content goes here */}
-        </p>
-      </div>
-      <div className="blank">
-        <h1>Hello my name is {name}</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Integer ultricies nisi sit amet vehicula varius. Phasellus venenatis, velit in vulputate fermentum, justo arcu aliquam urna, nec rhoncus quam libero nec metus. In dictum metus sed nisl scelerisque, in posuere neque consectetur. Sed in sagittis purus, nec fringilla justo.</p>
-      </div>
     </>
   );
 }
