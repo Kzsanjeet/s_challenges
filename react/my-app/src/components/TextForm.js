@@ -14,6 +14,17 @@ export default function TextForm(props) {
         setText(event.target.value);
     }
 
+    const handleCapClick = () => {
+        // Reverse the text and update the state
+        const reversedText = text.split('').reverse().join('');
+        setText(reversedText);
+      };
+
+    const handleClearClick = () =>{
+        const clearText = " "
+        setText(clearText)
+    }
+      
     const [text, setText] = useState("");
 
     return (
@@ -31,6 +42,8 @@ export default function TextForm(props) {
             </div>
             <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-primary mx-2" onClick={handleDownClick}>Convert to lowercase</button>
+            <button className="btn btn-primary mx-2" onClick={handleCapClick}>Reverse the word</button>
+            <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear</button>
           
         </div>
         <div className="container my-3">
