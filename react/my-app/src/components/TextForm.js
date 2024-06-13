@@ -24,6 +24,17 @@ export default function TextForm(props) {
         const clearText = " "
         setText(clearText)
     }
+
+    const handleCopy = () =>{
+        const text = document.getElementById("myBox")
+        text.select()
+        navigator.clipboard.writeText(text.value)
+    }
+
+    const handleExtraSpaces = () =>{
+        let newText = text.split(/[ ]+/);
+        setText(newText.join(" "))   
+     }
       
     const [text, setText] = useState("");
 
@@ -44,6 +55,8 @@ export default function TextForm(props) {
             <button className="btn btn-primary mx-2" onClick={handleDownClick}>Convert to lowercase</button>
             <button className="btn btn-primary mx-2" onClick={handleCapClick}>Reverse the word</button>
             <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear</button>
+            <button className="btn btn-primary mx-2" onClick={handleCopy}>Copy</button>
+            <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove extra spaces</button>
           
         </div>
         <div className="container my-3">
