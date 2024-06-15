@@ -40,7 +40,7 @@ export default function TextForm(props) {
 
     return (
         <>
-        <div className='container' style = {{backgroundColor: props.mode === "dark"?"grey":"white"}}>
+        <div className='container' style = {{color: props.mode === "dark"?"white":"dark"}}>
             <h1>{props.heading}</h1>
             <div className="mb-3">
                 <textarea 
@@ -50,7 +50,7 @@ export default function TextForm(props) {
                     onChange={handleOnChange}
                     style = {{
                         backgroundColor: props.mode === "dark" ? "grey" : "white",
-                        color: props.mode === "dark" ? "grey" : "white"
+                        color: props.mode === "dark" ? "white" : "black"
                       }}
                     rows="3">
                 </textarea>
@@ -63,7 +63,7 @@ export default function TextForm(props) {
             <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove extra spaces</button>
           
         </div>
-        <div className="container my-3">
+        <div className="container my-3" style={{color: props.mode === "dark"?"white":"black"}}>
             <h2>Your text summary</h2>
             <p>{text.split(" ").length} and {text.length} characters</p>
             <p>{0.008 * text.split(" ").length} Minutes read</p> 
