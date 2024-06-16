@@ -4,36 +4,44 @@ export default function TextForm(props) {
     const handleUpClick = () => {
         // console.log("Uppercase was clicked" + text);
         setText(text.toUpperCase());
+        props.showAlert("Converted to upper case", "success")
     }
     const handleDownClick=()=>{
         setText(text.toLowerCase())
+        props.showAlert("Converted to lower case", "success")
     }
 
     const handleOnChange = (event) => {
         // console.log("On change");
         setText(event.target.value);
+        props.showAlert("Typing", "success")
+
     }
 
     const handleCapClick = () => {
         // Reverse the text and update the state
         const reversedText = text.split('').reverse().join('');
-        setText(reversedText);
+        setText(reversedText);  
+        props.showAlert("Reversed the text succesfully", "success")
       };
 
     const handleClearClick = () =>{
         const clearText = " "
         setText(clearText)
+        props.showAlert("Cleared the text successfully", "success")
     }
 
     const handleCopy = () =>{
         const text = document.getElementById("myBox")
         text.select()
         navigator.clipboard.writeText(text.value)
+        props.showAlert("Copied to clipboard", "success")
     }
 
     const handleExtraSpaces = () =>{
         let newText = text.split(/[ ]+/);
-        setText(newText.join(" "))   
+        setText(newText.join(" ")) 
+        props.showAlert("Removed the extra spaces", "success")  
      }
       
     const [text, setText] = useState("");
