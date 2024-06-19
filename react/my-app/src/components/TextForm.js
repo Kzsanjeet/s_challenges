@@ -48,7 +48,7 @@ export default function TextForm(props) {
 
     return (
         <>
-        <div className='container' style = {{color: props.mode === "dark"?"white":"dark"}}>
+        <div className='container' style = {{color: props.mode === "dark"?"white":"dark"}} style1 = {{color: props.mode1 === "dark"?"white":"red"}}>
             <h1>{props.heading}</h1>
             <div className="mb-3">
                 <textarea 
@@ -63,7 +63,10 @@ export default function TextForm(props) {
                     rows="3">
                 </textarea>
             </div>
-            <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
+            <button className="btn btn-primary mx-2" onClick={handleUpClick} style = {{
+                        backgroundColor: props.mode === "dark" ? "red" : "white",
+                        color: props.mode === "dark" ? "white" : "red"
+                      }}>Convert to Uppercase</button>
             <button className="btn btn-primary mx-2" onClick={handleDownClick}>Convert to lowercase</button>
             <button className="btn btn-primary mx-2" onClick={handleCapClick}>Reverse the word</button>
             <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear</button>
@@ -71,7 +74,7 @@ export default function TextForm(props) {
             <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove extra spaces</button>
           
         </div>
-        <div className="container my-3" style={{color: props.mode === "dark"?"white":"black"}}>
+        <div className="container my-3" style={{color: props.mode === "dark"?"white":"black"}} style1={{color: props.mode1 === "dark"?"white":"red"}}>
             <h2>Your text summary</h2>
             <p>{text.split(" ").length} and {text.length} characters</p>
             <p>{0.008 * text.split(" ").length} Minutes read</p> 
