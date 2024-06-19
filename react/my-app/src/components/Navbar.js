@@ -17,10 +17,10 @@ export default function Navbar(props){
                 <Link className="nav-link active" aria-current="page" href="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/about">{props.aboutText}</Link>
+                <Link className="nav-link" to="/about">{props.aboutText}</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/pricing">Contact</a>
+                <Link className="nav-link" to="/pricing">Contact</Link>
               </li>
             </ul>
             <div className={`form-check form-switch text ${props.mode === "light"?"dark":"light"}`}>  
