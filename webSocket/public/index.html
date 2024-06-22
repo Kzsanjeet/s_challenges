@@ -7,14 +7,30 @@
 </head>
 <body>
     <h1>Chatting</h1>
-    <button onclick="createConnection()"></button>
+    <input type="text" id="message" placeholder="Enter message">
+    <button id="sendBtn">Send</button>
+    <div id="chatLog"></div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script>
-        function createConnection(){
-            const socket = io(); // made a socket connection
-        }
-      
+        const socket = io(); // made a socket connection
+        const message = document.getElementById("message")
+        const sendBtn = document.getElementById("sendBtn")
+        const chatLog = document.getElementById("chatLog")
+
+        socket.on("messageFromServer", (msg) => {
+            const p = document.createElement("p")
+            p.innerText = msg
+            chatLog.appendChild(p)
+            // chatLog.innerText = msg
+        })
+
+        sendBtn.addEventListener("click", (e) => {
+            const msg = message.value
+            console.log(msg)
+            socket.emit("userMessage", msg)  // emit means send
+            message.value = "" // Clear the input field after sending
+        })
     </script>
 </body>
 </html>
