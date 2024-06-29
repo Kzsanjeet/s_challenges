@@ -67,16 +67,16 @@ export default function TextForm(props) {
                         backgroundColor: props.mode === "dark" ? "red" : "white",
                         color: props.mode === "dark" ? "white" : "red"
                       }}>Convert to Uppercase</button>
-            <button className="btn btn-primary mx-2" onClick={handleDownClick}>Convert to lowercase</button>
-            <button className="btn btn-primary mx-2" onClick={handleCapClick}>Reverse the word</button>
-            <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear</button>
-            <button className="btn btn-primary mx-2" onClick={handleCopy}>Copy</button>
-            <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove extra spaces</button>
+            <button className="btn btn-primary mx-2 my-1" onClick={handleDownClick}>Convert to lowercase</button>
+            <button className="btn btn-primary mx-2 my-1" onClick={handleCapClick}>Reverse the word</button>
+            <button className="btn btn-primary mx-2 my-1" onClick={handleClearClick}>Clear</button>
+            <button className="btn btn-primary mx-2 my-1" onClick={handleCopy}>Copy</button>
+            <button className="btn btn-primary mx-2 my-1" onClick={handleExtraSpaces}>Remove extra spaces</button>
           
         </div>
         <div className="container my-3" style={{color: props.mode === "dark"?"white":"black"}} style1={{color: props.mode1 === "dark"?"white":"red"}}>
             <h2>Your text summary</h2>
-            <p>{text.split(" ").length} and {text.length} characters</p>
+            <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} and {text.length} characters</p>
             <p>{0.008 * text.split(" ").length} Minutes read</p> 
             <h2>Preview</h2>
             <p>{text.length>0?text:"Enter something to preview it here."}</p>
