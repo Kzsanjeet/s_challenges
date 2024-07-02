@@ -1,5 +1,5 @@
 // import React from "react"
-import ReactDom from "react-dom"
+
 
 
 
@@ -51,25 +51,25 @@ import ReactDom from "react-dom"
 // creating a book list
 
 import React from 'react'
-
+import ReactDom from "react-dom"
+import "./index.css";
 
 function BoolList() {
   return(
-    <section>
+    <section className="booklist">
       <Book/>
       <Book/>
       <Book/>
       <Book/>
       <Book/>
       <Book/>
-      <Author/>
     </section>
   )
 }
 
 function Book(){
   return(
-    <article>
+    <article className='book'>
       <Img/>
       <Title/>
       <Author/>
