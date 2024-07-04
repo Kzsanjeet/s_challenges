@@ -88,7 +88,7 @@
 
 // moving towards props
 
-import React from 'react'
+import React, { Children } from 'react'
 import ReactDom from "react-dom"
 import "./index.css";
 
@@ -110,7 +110,11 @@ const secondBook = {
 function BookList() { 
   return(
     <section className="booklist">
-      <Book image= {firstBook.image} title={firstBook.title} author = {firstBook.author}/>  
+      {/* to use childredn props we cannot use self closing and add a element */}
+      <Book image= {firstBook.image} title={firstBook.title} author = {firstBook.author}>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem voluptatum ea eveniet, accusamus recusandae, officiis doloribus repudiandae qui commodi sapiente sit impedit veniam, architecto ut totam vitae voluptatem? Quia, beatae.</p>
+        </Book>   
+      {/* <Book image= {firstBook.image} title={firstBook.title} author = {firstBook.author}/>    */}  
       <Book image= {secondBook.image} title={secondBook.title} author = {secondBook.author}/>
       <Book/>
       <Book/>
@@ -121,13 +125,17 @@ function BookList() {
 }
 // learning jsx javascript by creating variable and using it to render
 
-function Book(props){ // it is not compulsory that we have to put the name props only
-  console.log(props) // it is used when we have to display specific value
+// function Book(props){ // it is not compulsory that we have to put the name props only
+function Book({image, title, author,children}){ 
+  // const{image, title, author} = props // destructure in javascript
+  // console.log(props) // it is used when we have to display specific value
   return(
     <article className='book'>
-        <img src={props.image} alt="" />
-        <h1>{props.title}</h1>
-        <h4>{props.author}</h4> 
+        <img src={image} alt="" />
+        <h1>{title}</h1> 
+        <h4>{author}</h4> 
+        {children} 
+        {/* rendering childrem props */}
     </article>
   )
 }
