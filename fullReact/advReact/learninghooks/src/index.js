@@ -3,6 +3,7 @@ import ReactDom from "react-dom"
 import "./App.css"
 import "./Renderlist"
 import Renderlist from './Renderlist'
+import Event from './Event'
 
 function MyButton(){
   return(
@@ -81,17 +82,17 @@ let isLoggedIn = true;
 function Display(){
   return(
     <div>
-      {/* {
+      {
         isLoggedIn ?(
           <AdminPanel/>
         ):(
           <Show/>
         )
-      } */}
-
-      {
-        isLoggedIn && <AdminPanel/>
       }
+
+      {/* {
+        isLoggedIn && <AdminPanel/>
+      } */}
     </div>
   )
 }
@@ -100,6 +101,7 @@ function Display(){
 
 // ReactDom.render(<Show/>,document.getElementById("root"))
 // ReactDom.render(<Display/>,document.getElementById("root"))
+ReactDom.render(<Event/>,document.getElementById("root"))
 
-ReactDom.render(<App/>, document.getElementById("root"))
+// ReactDom.render(<App/>, document.getElementById("root"))
 
