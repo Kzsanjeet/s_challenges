@@ -1,9 +1,13 @@
 import React from 'react'
 import ReactDom from "react-dom"
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client' //react library to talk to web browers
 import "./App.css"
 import "./Renderlist"
 import Renderlist from './Renderlist'
 import Event from './Event'
+import Hooks from './Hooks'
+import Board from './tictac'
 
 function MyButton(){
   return(
@@ -101,7 +105,9 @@ function Display(){
 
 // ReactDom.render(<Show/>,document.getElementById("root"))
 // ReactDom.render(<Display/>,document.getElementById("root"))
-ReactDom.render(<Event/>,document.getElementById("root"))
+// ReactDom.render(<Event/>,document.getElementById("root"))
+// ReactDom.render(<Hooks/>,document.getElementById("root"))
+ReactDom.render(<Board/>,document.getElementById("root"))
 
 // ReactDom.render(<App/>, document.getElementById("root"))
 
