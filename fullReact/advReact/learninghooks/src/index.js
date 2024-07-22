@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDom from "react-dom"
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client' //react library to talk to web browers
+//import { StrictMode } from 'react'
+//import { createRoot } from 'react-dom/client' //react library to talk to web browers
 import "./App.css"
 import "./Renderlist"
 import Renderlist from './Renderlist'
-import Event from './Event'
-import Hooks from './Hooks'
+//import Event from './Event'
+//import Hooks from './Hooks'
 import Board from './tictac'
 
 function MyButton(){

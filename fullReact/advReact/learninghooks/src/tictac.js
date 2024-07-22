@@ -73,6 +73,30 @@ export default function Board() {
     );
   }
 
+  // export default function Game() {
+  //   const [xIsNext,setXIsNext] = useState(true)
+  //   const [history, setHistory] = useState(Array(9).fill(null))
+  //   const currentSquares = history[history.length-1]
+
+  //   function handlePlay(nextSquares){
+  //     setHistory([...history,nextSquares])
+  //     setXIsNext(!xIsNext)
+  //   }
+
+  //   return(
+  //     <>
+  //     <div className="game">
+  //       <div className="game-board">
+  //         <Board xIsNext={xIsNext} squares={currentSquares} onClick={handlePlay} />
+  //       </div>
+  //       <div className="game-info">
+  //         <ol>{}</ol>
+  //       </div>
+  //     </div>
+  //     </>
+  //   )
+  // }
+
   function calculateWinner(squares){
     const lines = [
         [0, 1, 2],
@@ -93,3 +117,4 @@ export default function Board() {
         }
         return null
   }
+
