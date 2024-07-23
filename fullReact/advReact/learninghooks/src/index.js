@@ -8,6 +8,7 @@ import Renderlist from './Renderlist'
 //import Event from './Event'
 //import Hooks from './Hooks'
 import Board from './tictac'
+import Think from './Think'
 
 function MyButton(){
   return(
@@ -107,7 +108,8 @@ function Display(){
 // ReactDom.render(<Display/>,document.getElementById("root"))
 // ReactDom.render(<Event/>,document.getElementById("root"))
 // ReactDom.render(<Hooks/>,document.getElementById("root"))
-ReactDom.render(<Board/>,document.getElementById("root"))
+// ReactDom.render(<Board/>,document.getElementById("root"))
+ReactDom.render(<Think/>,document.getElementById("root"))
 
 // ReactDom.render(<App/>, document.getElementById("root"))
 
